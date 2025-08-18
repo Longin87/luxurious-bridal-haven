@@ -245,11 +245,91 @@ body {
   &__box {
     position: relative;
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   &__box-img {
     position: absolute;
+    top: 0;
+    left: -75px;
+    max-width: fit-content;
   }
 
-  &__caption {}
+  &__caption {
+    margin-top: auto;
+    margin-bottom: 40px;
+    color: vars.$color-text-muted;
+    width: 290px;
+  }
+}
+
+.join-us {
+  background-color: vars.$bg-primary;
+
+  &__inner {
+    display: flex;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  &__img {
+    max-width: 540px;
+  }
+
+  &__box {
+    padding: 35px 0;
+  }
+
+  &__tittle {
+    font-size: 45px;
+    margin-bottom: 20px;
+    @extend %lora-400;
+  }
+
+  &__text {
+    font-size: 30px;
+    @extend %lora-400;
+    color: vars.$color-primary;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    margin-bottom: 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid vars.$color-text-muted;
+    background-color: transparent;
+    margin-bottom: 40px;
+    @extend %opensans-400;
+    color: vars.$color-text-muted;
+  }
+
+  &__input+.join-us__input {
+    margin-top: 10px;
+  }
+
+  &__btn {
+    display: block;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: vars.$color-accent;
+    border-radius: 3px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  &__form-caption {
+    
+    font-size: 11px;
+  }
 }
