@@ -285,6 +285,7 @@ body {
     font-size: 45px;
     margin-bottom: 20px;
     @extend %lora-400;
+    line-height: 1.28;
   }
 
   &__text {
@@ -292,6 +293,7 @@ body {
     @extend %lora-400;
     color: vars.$color-primary;
     margin-bottom: 40px;
+    line-height: 1.26;
   }
 
   &__form {
@@ -329,7 +331,61 @@ body {
   }
 
   &__form-caption {
-    
+
     font-size: 11px;
+  }
+}
+
+.designer {
+  padding: 150px 0 210px;
+
+  &__inner {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 400px;
+  }
+
+  &__tittle {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: vars.$color-text-muted;
+  }
+
+  &__box {
+    text-align: center;
+    position: relative;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__caption {
+    padding: 20px 18px;
+    width: 300px;
+    @extend %lora-400;
+    font-size: 20px;
+    border: 3px solid vars.$color-text-muted;
+    position: absolute;
+    top: 180px;
+    left: -180px;
+    background-color: #fff;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 90px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$color-text-muted;
   }
 }
