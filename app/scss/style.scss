@@ -184,6 +184,7 @@ body {
     font-size: 80px;
     line-height: 1.2;
     margin-bottom: 60px;
+    text-transform: uppercase;
   }
 
   &__link {
@@ -278,14 +279,15 @@ body {
   }
 
   &__box {
-    padding: 35px 0;
+    padding: 30px 0;
   }
 
   &__tittle {
     font-size: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @extend %lora-400;
     line-height: 1.28;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -353,6 +355,7 @@ body {
     @extend %lora-400;
     font-size: 45px;
     margin-bottom: 50px;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -387,5 +390,59 @@ body {
     padding: 10px 90px;
     color: vars.$color-text-muted;
     border: 1px solid vars.$color-text-muted;
+  }
+}
+
+.our-advantages {
+  background-color: vars.$bg-primary;
+
+  &__wrapper {
+    padding: 64px 0 34px;
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+
+  &__img-decor{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__inner {
+    margin-left: auto;
+    padding-right: 128px;
+  }
+
+  &__tittle {
+    @extend %lora-400;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    column-count: 2;
+    column-gap: 80px;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 22px;
+      left: 0;
+      background-image: url(../images/our-advantage-item-decor.svg);
+    }
   }
 }
