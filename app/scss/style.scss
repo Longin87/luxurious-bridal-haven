@@ -130,8 +130,8 @@ body {
 
   &__form-btn {
     position: absolute;
-    right: 0;
-    top: 1px;
+    right: 1px;
+    top: 10px;
     cursor: pointer;
   }
 
@@ -240,7 +240,7 @@ body {
   }
 
   &__img {
-    padding-top: 75px;
+    margin-top: 75px;
   }
 
   &__box {
@@ -330,6 +330,8 @@ body {
     color: #fff;
     margin-top: 40px;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
   }
 
   &__form-caption {
@@ -340,6 +342,14 @@ body {
 
 .designer {
   padding: 150px 0 210px;
+  position: relative;
+  &__img-decor {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -225px;
+    z-index: 5;
+  }
 
   &__inner {
     padding: 0 40px;
@@ -408,7 +418,7 @@ body {
     left: 40px;
   }
 
-  &__img-decor{
+  &__img-decor {
     position: absolute;
     right: 0;
     bottom: 0;
