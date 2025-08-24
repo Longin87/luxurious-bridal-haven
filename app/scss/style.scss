@@ -743,8 +743,6 @@ body {
   align-items: center;
   gap: 2px;
 
-  &__prev {}
-
   &__list {
     display: flex;
     justify-content: center;
@@ -752,8 +750,6 @@ body {
     font-size: 16px;
     gap: 2px;
   }
-
-  &__item {}
 
   &__link {
     width: 43px;
